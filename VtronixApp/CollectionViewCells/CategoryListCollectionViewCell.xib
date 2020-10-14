@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MQE-os-Gq4" customClass="CategoryListCollectionViewCell" customModule="VtronixApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="419"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wJ2-il-8Md">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="419"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0C-4r-Lni">
+                        <rect key="frame" x="10" y="6" width="273" height="407"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yes-AD-mrK">
+                                <rect key="frame" x="24" y="24" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yes-AD-mrK" secondAttribute="height" multiplier="1:1" id="Ebf-tn-e58"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pUI-gA-RnZ">
+                                <rect key="frame" x="115.5" y="269" width="42" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-Em-c80">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gl-Qk-7pH">
+                                        <rect key="frame" x="0.0" y="28.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lLV-z3-1k7">
+                                <rect key="frame" x="126.5" y="126.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pUI-gA-RnZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c0C-4r-Lni" secondAttribute="leading" constant="24" id="8ho-9W-q4d"/>
+                            <constraint firstItem="pUI-gA-RnZ" firstAttribute="top" secondItem="yes-AD-mrK" secondAttribute="bottom" constant="20" id="IbH-Zs-su8"/>
+                            <constraint firstAttribute="trailing" secondItem="yes-AD-mrK" secondAttribute="trailing" constant="24" id="ODC-46-y6X"/>
+                            <constraint firstItem="lLV-z3-1k7" firstAttribute="centerX" secondItem="yes-AD-mrK" secondAttribute="centerX" id="VHV-mK-Nla"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pUI-gA-RnZ" secondAttribute="trailing" constant="24" id="bik-Op-iMQ"/>
+                            <constraint firstItem="yes-AD-mrK" firstAttribute="top" secondItem="c0C-4r-Lni" secondAttribute="top" constant="24" id="ety-Z0-v7S"/>
+                            <constraint firstItem="pUI-gA-RnZ" firstAttribute="centerX" secondItem="yes-AD-mrK" secondAttribute="centerX" id="hKC-KB-hEJ"/>
+                            <constraint firstItem="yes-AD-mrK" firstAttribute="leading" secondItem="c0C-4r-Lni" secondAttribute="leading" constant="24" id="hzV-qo-4DI"/>
+                            <constraint firstItem="lLV-z3-1k7" firstAttribute="centerY" secondItem="yes-AD-mrK" secondAttribute="centerY" id="o65-6f-AaL"/>
+                            <constraint firstAttribute="bottom" secondItem="pUI-gA-RnZ" secondAttribute="bottom" priority="750" constant="24" id="ox3-qJ-fEu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c0C-4r-Lni" firstAttribute="leading" secondItem="wJ2-il-8Md" secondAttribute="leading" constant="10" id="Jo4-BE-BHw"/>
+                    <constraint firstAttribute="trailing" secondItem="c0C-4r-Lni" secondAttribute="trailing" constant="10" id="LdY-nO-DyJ"/>
+                    <constraint firstItem="c0C-4r-Lni" firstAttribute="top" secondItem="wJ2-il-8Md" secondAttribute="top" constant="6" id="XDc-eB-rf6"/>
+                    <constraint firstAttribute="bottom" secondItem="c0C-4r-Lni" secondAttribute="bottom" constant="6" id="b0n-Nt-110"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="293" height="419"/>
+            <connections>
+                <outlet property="activityIndicator" destination="lLV-z3-1k7" id="jaY-2k-H1d"/>
+                <outlet property="containerView" destination="c0C-4r-Lni" id="SZl-K7-LfV"/>
+                <outlet property="imageView" destination="yes-AD-mrK" id="Rv0-Jk-CEx"/>
+                <outlet property="subtitleLabel" destination="5gl-Qk-7pH" id="VdG-90-7t0"/>
+                <outlet property="titleLabel" destination="FDi-Em-c80" id="Vbe-OG-Gh4"/>
+            </connections>
+            <point key="canvasLocation" x="84.782608695652186" y="219.30803571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
