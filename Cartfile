@@ -1,0 +1,4 @@
+github "tristanhimmelman/ObjectMapper"
+github "onevcat/Kingfisher"
+github "jdg/MBProgressHUD"
+github "xmartlabs/Eureka" ~> 5.2
