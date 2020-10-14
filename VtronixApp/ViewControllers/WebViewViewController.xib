@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewViewController" customModule="VtronixApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="6ZR-KE-Ps2" id="dIg-t8-c14"/>
+                <outlet property="view" destination="iN0-l3-epB" id="61W-5s-X8Q"/>
+                <outlet property="webView" destination="Ydu-yM-zfs" id="9aA-en-LRT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydu-yM-zfs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6ZR-KE-Ps2">
+                    <rect key="frame" x="197" y="443" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6ZR-KE-Ps2" firstAttribute="centerY" secondItem="Ydu-yM-zfs" secondAttribute="centerY" id="0GI-Oc-0D6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ydu-yM-zfs" secondAttribute="bottom" id="6Qc-F1-Ls5"/>
+                <constraint firstItem="Ydu-yM-zfs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ej1-F9-ypx"/>
+                <constraint firstItem="6ZR-KE-Ps2" firstAttribute="centerX" secondItem="Ydu-yM-zfs" secondAttribute="centerX" id="ZPh-dy-Mwv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ydu-yM-zfs" secondAttribute="trailing" id="hkD-2z-w5C"/>
+                <constraint firstItem="Ydu-yM-zfs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xfK-5e-850"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="138"/>
+        </view>
+    </objects>
+</document>

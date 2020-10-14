@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PDFWebViewViewController" customModule="VtronixApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="2Us-xL-yVp" id="guu-Pp-pNv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="IWt-HL-5R5"/>
+                <outlet property="webView" destination="vES-78-k3p" id="9Aq-e2-2k9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vES-78-k3p">
+                    <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21B-45-mGH">
+                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                    <items>
+                        <barButtonItem title="Download" id="fmx-2U-6pV">
+                            <connections>
+                                <action selector="btnDownloadTapped:" destination="-1" id="HYg-gq-pxx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ZUb-47-Vet"/>
+                        <barButtonItem title="Buy Product" id="W3x-WR-eFA">
+                            <connections>
+                                <action selector="btnBuyTapped:" destination="-1" id="QYv-yA-dUq"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-xL-yVp">
+                    <rect key="frame" x="197" y="418.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Us-xL-yVp" firstAttribute="centerX" secondItem="vES-78-k3p" secondAttribute="centerX" id="0gO-EJ-3AS"/>
+                <constraint firstItem="21B-45-mGH" firstAttribute="top" secondItem="vES-78-k3p" secondAttribute="bottom" id="9EK-fH-DKa"/>
+                <constraint firstItem="vES-78-k3p" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Bpd-UR-ncD"/>
+                <constraint firstItem="21B-45-mGH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qg4-2I-HHj"/>
+                <constraint firstItem="21B-45-mGH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="i2V-wr-HTA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="21B-45-mGH" secondAttribute="bottom" id="jSo-f1-t6b"/>
+                <constraint firstItem="2Us-xL-yVp" firstAttribute="centerY" secondItem="vES-78-k3p" secondAttribute="centerY" id="t9t-IP-4NJ"/>
+                <constraint firstItem="vES-78-k3p" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vFx-o2-dla"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vES-78-k3p" secondAttribute="trailing" id="yW5-t8-Gjh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
